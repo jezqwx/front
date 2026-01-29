@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1.1</title>
+    <script src="https://code.jquery.com/jquery-37.1.min.js"></script>
+
+    <style>
+        .highlight{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleBtn">Toggle Highlight</button>
+    <p id="text"><strong>Ключевые термины</strong>
+
+<p id="text">React — JavaScript-библиотека для создания пользовательских интерфейсов; отвечает только за слой отображения (view layer).</p>
+
+<script>
+    $("#toggleBtn").on("click", function(){
+        $("#text").toggleClass("highlight");
+    })
+</script>
+
+</body>
+</html>
