@@ -1,5 +1,6 @@
 import { Component } from "react";
 import type { ReactNode } from "react";
+
 interface Props {
   children: ReactNode;
   fallback: ReactNode;
@@ -19,9 +20,18 @@ class ErrorBoundary extends Component<Props, State> {
     return { hasError: true };
   }
 
+  resetError = () => {
+    this.setState({ hasError: false });
+  };
+
   render() {
     if (this.state.hasError) {
-      return this.props.fallback;
+      return (
+        <div>
+          {this.props.fallback}
+          <button onClick={this.resetError}>Try Again</button>
+        </div>
+      );
     }
 
     return this.props.children;
