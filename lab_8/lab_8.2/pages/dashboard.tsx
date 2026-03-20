@@ -32,6 +32,7 @@ export default function Dashboard({
           borderRadius: "12px",
         }}
       >
+        <h1>Dashboard (SSR)</h1>
         <h2>Profile</h2>
         <p><strong>Name:</strong> {user.name}</p>
         <p><strong>Email:</strong> {user.email}</p>
