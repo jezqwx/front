@@ -1,0 +1,16 @@
+.todo-list {
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.todo-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
